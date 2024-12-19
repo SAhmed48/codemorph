@@ -5,36 +5,57 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-8 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[150px] xl:pt-[180px] 2xl:pb-[150px] 2xl:pt-[150px]"
+        className="relative z-10 min-h-[750px]
+        min-h-[750px] w-full flex-col justify-end overflow-hidden min-[1500px]:min-h-[750px] min-[1700px]:min-h-[750px]
+        overflow-hidden bg-white pt-[120px] dark:bg-gray-dark"
+        style={{
+          backgroundImage: 'radial-gradient(rgba(148, 204, 239, 0.435), rgba(194, 232, 255, 0.8), rgba(255, 255, 255, 0) 70%)',
+        }}
       >
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+        <div className="container absolute bottom-1 left-3 right-2">
+          <div className="-mx-2 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Your Partner in Transforming Complex Challenges into Seamless Software Solutions.
+              <div className="mx-auto text-left">
+                <div className="mb-2">
+                  <h1 className="paragraph-md"><span><span>A SOFTWARE DEVELOPMENT COMPANY</span></span>
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Specializing in B2B SaaS platforms for productivity, analytics, marketing, sales, and engineering,
-                  we partner with entrepreneurs to revolutionize their workflows.
-                  Our mission is to create innovative solutions that empower businesses to reclaim time,
-                  streamline processes, and drive growth. Let us help you transform your vision into reality
-                  with cutting-edge technology designed to enhance efficiency and productivity.
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    🔥 Get Pro
-                  </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Star on GitHub
-                  </Link>
                 </div>
+                <header className="mb-4 text-balance *:max-w-80 sm:*:max-w-none md:max-w-none xl:mb-10">
+                  <h2 className="heading-xl text-4xl md:text-7xl">
+                    <span>
+                      <span>Speed up your software</span>
+                    </span>
+                    <br></br>
+                      <span>
+                        <span>delivery process &amp; see key </span>
+                      </span>
+                      <br></br>
+                        <span>
+                          <span>metrics rise</span>
+                        </span>
+                      </h2>
+                    </header>
+                <div className="max-w-[440px] lg:max-w-[730px]">
+                  <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                    <span>
+                      <span>We help product teams at scale-ups and SMBs release better products faster &amp; cut development costs.</span>
+                    </span>
+                </p>
+                </div>
+                {/*<div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">*/}
+                {/*  <Link*/}
+                {/*    href="https://nextjstemplates.com/templates/saas-starter-startup"*/}
+                {/*    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"*/}
+                {/*  >*/}
+                {/*    🔥 Get Pro*/}
+                {/*  </Link>*/}
+                {/*  <Link*/}
+                {/*    href="https://github.com/NextJSTemplates/startup-nextjs"*/}
+                {/*    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"*/}
+                {/*  >*/}
+                {/*    Star on GitHub*/}
+                {/*  </Link>*/}
+                {/*</div>*/}
               </div>
             </div>
           </div>

@@ -72,7 +72,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-end px-4">
+            <div className="flex w-full items-center justify-center px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -106,7 +106,7 @@ const Header = () => {
                 >
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative">
+                      <li key={index} className="group relative tw-px-6 hover:tw-underline">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
