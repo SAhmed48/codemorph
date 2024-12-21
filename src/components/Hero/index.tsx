@@ -1,46 +1,47 @@
-import Link from "next/link";
-
 const Hero = () => {
   return (
     <>
       <section
         id="home"
-        className="relative z-10 min-h-[750px]
+        className="relative z-10 min-h-[655px]
         min-h-[750px] w-full flex-col justify-end overflow-hidden min-[1500px]:min-h-[750px] min-[1700px]:min-h-[750px]
-        overflow-hidden bg-white pt-[120px] dark:bg-gray-dark"
-        style={{
-          backgroundImage: 'radial-gradient(rgba(148, 204, 239, 0.435), rgba(194, 232, 255, 0.8), rgba(255, 255, 255, 0) 70%)',
-        }}
+        overflow-hidden bg-white pt-[120px] dark:bg-gray-dark bg-hero-linear-gradient"
       >
-        <div className="container absolute bottom-1 left-3 right-2">
-          <div className="-mx-2 flex flex-wrap">
+        <div className="container absolute bottom-6 lg:bottom-1 left-3 right-2">
+          <div className="-mx-2 w-full flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto text-left">
                 <div className="mb-2">
-                  <h1 className="paragraph-md"><span><span>A SOFTWARE DEVELOPMENT COMPANY</span></span>
-                </h1>
+                  <h1 className="paragraph-md">
+                    <span>
+                      <span>A SOFTWARE DEVELOPMENT COMPANY</span>
+                    </span>
+                  </h1>
                 </div>
                 <header className="mb-4 text-balance *:max-w-80 sm:*:max-w-none md:max-w-none xl:mb-10">
-                  <h2 className="heading-xl text-4xl md:text-7xl">
+                  <h2 className="heading-xl text-4xl lg:text-7xl">
                     <span>
                       <span>Speed up your software</span>
                     </span>
                     <br></br>
-                      <span>
-                        <span>delivery process &amp; see key </span>
-                      </span>
-                      <br></br>
-                        <span>
-                          <span>metrics rise</span>
-                        </span>
-                      </h2>
-                    </header>
+                    <span>
+                      <span>delivery process &amp; see key </span>
+                    </span>
+                    <br></br>
+                    <span>
+                      <span>metrics rise</span>
+                    </span>
+                  </h2>
+                </header>
                 <div className="max-w-[440px] lg:max-w-[730px]">
                   <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                     <span>
-                      <span>We help product teams at scale-ups and SMBs release better products faster &amp; cut development costs.</span>
+                      <span>
+                        We help product teams at scale-ups and SMBs release
+                        better products faster &amp; cut development costs.
+                      </span>
                     </span>
-                </p>
+                  </p>
                 </div>
                 {/*<div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">*/}
                 {/*  <Link*/}
@@ -60,7 +61,54 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+        <div className="absolute bottom-0 -z-10 mx-auto h-screen w-full">
+          <div
+            className="absolute bottom-0 right-0 z-0 h-[60vw] max-h-[1200px] min-h-[600px] w-[30vw] min-w-[200px] max-w-[600px] -translate-x-1/4 translate-y-[50%] opacity-0 xl:left-[70%] xl:-translate-x-1/2"
+            style={{
+              transformStyle: "preserve-3d",
+              perspective: "680px",
+              opacity: 1,
+              visibility: "inherit",
+            }}
+          >
+            <span
+              className="absolute -left-1/2 block h-full w-[80%] origin-left bg-door-gradient opacity-70"
+              style={{
+                translate: "none",
+                rotate: "none",
+                scale: "none",
+                transform: "rotateY(10deg)",
+                top: "3%",
+                left: "-100%",
+              }}
+            ></span>
+
+            <span
+              className="absolute -left-1/2 block h-full w-[80%] origin-left bg-door-gradient opacity-70"
+              style={{
+                translate: "none",
+                rotate: "none",
+                scale: "none",
+                transform: "rotateY(10deg)",
+                top: "7%",
+                left: "-50%",
+              }}
+            ></span>
+
+            <span
+              className="absolute -left-1/2 block h-full w-[80%] origin-left bg-door-gradient opacity-70"
+              style={{
+                translate: "none",
+                rotate: "none",
+                scale: "none",
+                transform: "rotateY(10deg)",
+                top: "-17%",
+                left: "0px",
+              }}
+            ></span>
+          </div>
+        </div>
+        <div className="absolute right-0 top-[90px] z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"

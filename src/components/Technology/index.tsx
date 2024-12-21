@@ -35,13 +35,13 @@ const TechnologyProficiency = () => {
           />
         </div>
         <div className="container my-16">
-          <ul className="flex list-none justify-evenly items-center text-2xl border-b-[4px] border-gray-200 dark:border-white-300">
-            {Object.keys(technologiesData).map((technologyName, index) => <div key={`${index}-container`} className={`py-5 ${technologyName === activeTab ? 'border-b-[4px] border-primary' : ''} hover:border-b-[4px] hover:border-primary`}> 
+          <ul className="flex list-none justify-evenly text-lg items-center text-2xl border-b-[4px] border-gray-200 dark:border-white-300">
+            {Object.keys(technologiesData).map((technologyName, index) => <span key={`${index}-container`} className={`py-2 ${technologyName === activeTab ? 'border-b-[2px] border-primary' : ''} hover:border-b-[2px] hover:border-primary`}>
                 <li key={index} className={`cursor-pointer hover:text-primary ${technologyName === activeTab ? 'text-primary' : ''}`} onClick={() => {setActiveTab(technologyName)}}>{technologyName}</li> 
-              </div>
+              </span>
             )}
           </ul>
-          <ul className="flex list-none justify-evenly items-center text-2xl my-6">
+          <ul className="flex list-none justify-evenly text-base items-center my-2">
           {activeTechnologies.map(technology => <SingleTechnology key={technology.id} technology={technology} />)}
           </ul>
         </div>
