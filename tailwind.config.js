@@ -74,11 +74,12 @@ module.exports = {
       dropShadow: {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
       },
-      backgroundImage:
-         {
-           'contact-us-blob': "url('/images/contact.svg')",
-           'hero-linear-gradient': 'linear-gradient(0deg, #f7f9fa, hsla(0, 0%, 100%, 0) 50%), radial-gradient(circle at bottom right, #8dd4ff, #b5b4ff, #b5b4ff, #8dd4ff, #ffebc7, #ffd699);'
-         }
+      backgroundImage: {
+        "contact-us-blob": "url('/images/contact.svg')",
+        "hero-linear-gradient":
+          "linear-gradient(0deg, #f7f9fa, hsla(0, 0%, 100%, 0) 50%), radial-gradient(circle at bottom right, #8dd4ff, #b5b4ff, #b5b4ff, #8dd4ff, #ffebc7, #ffd699);",
+        "about-us-video": "url('/images/video/about-us.mp4')",
+      },
     },
   },
   plugins: [],

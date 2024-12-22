@@ -15,7 +15,8 @@ import Insights from "@/components/Insights";
 
 export const metadata: Metadata = {
   title: "Custom Software Development & IT Services | ",
-  description: "Partner with Codemorph Technologies, a leading software development company with 22+ years of experience, offering tailored IT services for businesses in the USA.",
+  description:
+    "Partner with Codemorph Technologies, a leading software development company with 22+ years of experience, offering tailored IT services for businesses in the USA.",
   // other metadata
 };
 
@@ -28,7 +29,7 @@ export default function Home() {
       <Features />
       <TechnologyProficiency />
       {/* <Insights /> */}
-      {/* <Video /> */}
+      <Video />
       {/*<AboutSectionOne />*/}
       {/*<AboutSectionTwo />*/}
       <Testimonials />
