@@ -56,6 +56,9 @@ module.exports = {
           dark: "#1E232E",
           light: "#F0F2F9",
         },
+        "gray-morph": "#4e5455",
+        "to-brand-sky-000": "#c2e8ff",
+        "from-brand-sky-300": "#8dd4ff",
       },
       boxShadow: {
         signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",
@@ -76,6 +79,10 @@ module.exports = {
       },
       backgroundImage: {
         "contact-us-blob": "url('/images/contact.svg')",
+        "services-hero-blob": "url('/images/services/services-hero-blob.svg')",
+        "services-hero-doors":
+          "url('/images/services/services-hero-doors.svg')",
+        "metrics-desktop-blob": "url('/images/services/metrics-desktop.svg')",
         "hero-linear-gradient":
           "linear-gradient(0deg, #f7f9fa, hsla(0, 0%, 100%, 0) 50%), radial-gradient(circle at bottom right, #8dd4ff, #b5b4ff, #b5b4ff, #8dd4ff, #ffebc7, #ffd699);",
         "about-us-video": "url('/images/video/about-us.mp4')",

@@ -23,6 +23,26 @@
     @apply opacity-70;
   }
 
+  .door-icon:before {
+    @apply absolute h-[51px] content-[""] border-l-[24px] border-y-8 border-y-transparent left-0 top-[15px];
+  }
+
+  .door-icon-peach:before {
+    @apply border-l-[#ffce85];
+  }
+
+  .door-icon-lavender:before {
+    @apply border-l-[#b5b4ff];
+  }
+
+  .door-icon-lightblue:before {
+    @apply border-l-[#8dd4ff];
+  }
+
+  .heading-2xl {
+    @apply text-[80px] leading-[80px];
+  }
+
   input#togglePlan:checked ~ .dot {
     @apply translate-x-full;
   }
