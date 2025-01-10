@@ -3,6 +3,8 @@ import FaqSection from "@/components/Faq";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
 import MetricsSection from "@/components/Metrics";
 import softwareDevMetricData from "@/components/Metrics/softwareDevMetrics";
+import CaseStudySection from "@/components/CaseStudies";
+import { softwareDevCaseStudies } from "@/components/CaseStudies/softwareDevCaseStudies";
 
 export const metadata: Metadata = {
   title: "About Page | Free Next.js Template for Startup and SaaS",
@@ -79,6 +81,7 @@ const AboutPage = () => {
         metricTitle="Your success metrics become ours"
         metrics={softwareDevMetricData}
       />
+      <CaseStudySection caseStudyTitle="Judged by the results we deliver each sprint" caseStudies={softwareDevCaseStudies} />
       <ContactBanner />
       <FaqSection />
     </>

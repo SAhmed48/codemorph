@@ -50,4 +50,10 @@
   input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
   }
+
+  .swipe-effect:before {
+  @apply absolute z-0 h-full w-0 bg-[rgb(49_52_53_/_var(--tw-bg-opacity))] transition-all ease-[cubic-bezier(.4,0,0.2,1)] duration-[0.5s] content-[var(--tw-content)] left-0 inset-y-0;
+  --tw-bg-opacity: 1;
+  animation-duration: 0.5s;
+}
 }
