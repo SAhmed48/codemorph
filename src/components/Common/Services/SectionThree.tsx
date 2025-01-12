@@ -40,7 +40,7 @@ const ServiceSectionThree = ({
                 </h2>
               </header>
               <div className="mt-5 lg:mt-0 lg:max-w-[680px]">
-                <p className="font-light text-base">
+                <p className="font-light text-2xl">
                   <span>
                     <span style={{ color: "#313435" }}>
                       {sectionOne.description}

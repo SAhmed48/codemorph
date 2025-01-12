@@ -1,16 +1,36 @@
 import ServiceSectionOne from "src/components/Common/Services/SectionOne";
 import ServiceSectionTwo from "@/components/Common/Services/SectionTwo";
+import { TechPoint } from "@/types/technology";
 import ServiceSectionThree from "@/components/Common/Services/SectionThree";
 import ServiceSectionFour from "@/components/Common/Services/SectionFour";
-import { endToEndWebServices } from "@/components/Common/Services/data/services";
+import { endToEndServices } from "@/components/Common/Services/data/services";
 import FaqSection from "@/components/Faq";
 import { webFaqs } from "@/components/Common/Services/data/faqs";
 import Metrics from "@/components/Metrics";
 import { WebMetricData } from "@/components/Metrics/Metrics";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
-import { webTechPoints } from "@/components/Common/Services/data/techPoints";
+const CloudDevelopment = () => {
+  const webTechPoints: TechPoint[] = [
+    {
+      digit: 91,
+      notation: "%",
+      text: "of CTOs say growing technical debt is their main concern",
+      authorText: "(STX Next, 2023)",
+    },
+    {
+      digit: 56,
+      notation: "%",
+      text: "of IT recruiters say finding skilled talent is their no 1 challenge",
+      authorText: "(Statista, 2024)",
+    },
+    {
+      digit: 26,
+      notation: "%",
+      text: "of CTOs admit capacity is their no 2 challenge",
+      authorText: "(STX Next, 2023)",
+    },
+  ];
 
-const WebDevelopment = () => {
   return (
     <>
       <ServiceSectionOne
@@ -85,7 +105,7 @@ const WebDevelopment = () => {
         heading="End-to-end web development support"
         description="Note that one developer can specialize in many technologies"
         imagePath="/images/services/web-dev.webp"
-        endToEndServices={endToEndWebServices}
+        endToEndServices={endToEndServices}
       />
       <Metrics
         metricTitle="The team you need is here"
@@ -102,4 +122,4 @@ const WebDevelopment = () => {
   );
 };
 
-export default WebDevelopment;
+export default CloudDevelopment;

@@ -28,7 +28,7 @@ export const dataServices: string[] = [
   "Data Analytics",
 ];
 
-export const endToEndServices: EndService[] = [
+export const endToEndWebServices: EndService[] = [
   {
     serviceName: (
       <div className="font-normal">
@@ -130,6 +130,82 @@ export const endToEndServices: EndService[] = [
             {item}
           </p>
         ))}
+      </div>
+    ),
+  },
+];
+
+export const endToEndMobileServices: EndService[] = [
+  {
+    serviceName: (
+      <div className="font-normal">
+        <h2 className="text-3xl text-[#8dd4ff]">
+          Android /iOS React Native development
+        </h2>
+      </div>
+    ),
+    serviceTech: (
+      <div className="text-white font-light">
+        <span className="my-4 text-lg">
+          Bring in the skillset needed to launch a competitive and practical app
+          by design. Your mobile team will take full responsibility for the
+          delivery and publishing.
+        </span>
+        {[
+          "Faster development time",
+          "High mobile app performance",
+          "Maintenance time cut by half",
+        ].map((item, index) => (
+          <p key={`key-mobile-service-${index}`} className="text-lg my-4">
+            -> {item}
+          </p>
+        ))}
+      </div>
+    ),
+  },
+  {
+    serviceName: (
+      <div className="font-normal">
+        <h2 className="text-3xl text-[#8dd4ff]">MVP development</h2>
+      </div>
+    ),
+    serviceTech: (
+      <div className="text-white font-light">
+                <span className="my-4 text-lg">
+          Unsure of the app’s popularity? You can test your assumption with an Android and iOS MVP designed to support your goal at the lowest cost.
+        </span>
+        {[
+          "Introduce app performance monitoring and its management",
+          "Quick idea validation at a low risk and cost",
+          "Streamlined mobile app development process",
+        ].map((item, index) => (
+          <p key={`key-mobile-service-${index}`} className="text-lg my-4">
+            -> {item}
+          </p>
+        ))}
+
+      </div>
+    ),
+  },
+      {
+    serviceName: (
+      <div className="font-normal">
+        <h2 className="text-3xl text-[#8dd4ff]">Mobile app modernization</h2>
+      </div>
+    ),
+    serviceTech: (
+      <div className="text-white font-light">
+       <span className="my-4 text-lg">Rebuild your current mobile app in React Native to slash maintenance costs and make the project incomparably easier to code.</span>
+        {[
+          "Improved user engagement",
+          "Comparable mobile app performance",
+          "Single code base",
+        ].map((item, index) => (
+          <p key={`key-mobile-service-${index}`} className="text-lg my-4">
+            -> {item}
+          </p>
+        ))}
+
       </div>
     ),
   },

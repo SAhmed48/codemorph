@@ -93,7 +93,7 @@ const SoftwareDevelopServices = () => {
         contactText="Interesting, let's see"
         contactUrl="/contact"
       />
-      <FaqSection companyFaqs={companyFaqs} />
+      <FaqSection faqs={companyFaqs} />
     </>
   );
 };

@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 
 const FaqSection = ({
-  companyFaqs,
+  faqs,
 }: {
-  companyFaqs: { question: string; answer: React.ReactNode }[];
+  faqs: { question: string; answer: React.ReactNode }[];
 }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -20,7 +20,7 @@ const FaqSection = ({
           Good to know
         </h6>
         <div className="col-span-2 w-full" data-sentry-element="Accordion">
-          {companyFaqs.map((faq, index) => (
+          {faqs.map((faq, index) => (
             <div
               key={index}
               className="border-b first:pt-0 lg:py-8 !p-0 text-brand-greyscale-000"

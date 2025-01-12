@@ -7,18 +7,22 @@ const ServiceSectionFour = ({
   description,
   endToEndServices,
   imagePath,
+  customSectionCls = "bg-[#444849]",
+  customTextCls = "text-[#7dd3fc]",
 }: {
   heading: string;
   description: string;
   imagePath: string;
+  customSectionCls?: string;
+  customTextCls?: string;
   endToEndServices: EndService[];
 }) => {
   return (
-    <section id="service-section-four" className="bg-[#444849]">
+    <section id="service-section-four" className={`${customSectionCls}`}>
       <div className="container flex flex-col gap-10 py-10 sm:gap-14 md:flex-row md:py-24 lg:gap-20 lg:py-30 xl:gap-40">
         <div className="opacity-1 top-10 flex w-full flex-1 flex-col gap-10 self-start md:sticky md:gap-16">
           <header>
-            <h2 className="font-light text-6xl text-[#7dd3fc]">
+            <h2 className={`font-light text-6xl ${customTextCls}`}>
               <span>{heading}</span>
             </h2>
           </header>
