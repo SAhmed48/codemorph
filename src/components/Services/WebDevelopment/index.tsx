@@ -6,6 +6,9 @@ import ServiceSectionFour from "@/components/Common/Services/SectionFour";
 import { endToEndServices } from "@/components/Common/Services/data/services";
 import FaqSection from "@/components/Faq";
 import { webFaqs } from "@/components/Common/Services/data/webFaqs";
+import Metrics from "@/components/Metrics";
+import { WebMetricData } from "@/components/Metrics/Metrics";
+import ContactBanner from "@/components/ContactBanner/ContactBanner";
 const WebDevelopment = () => {
   const webTechPoints: TechPoint[] = [
     {
@@ -103,6 +106,16 @@ const WebDevelopment = () => {
         description="Note that one developer can specialize in many technologies"
         imagePath="/images/services/web-dev.webp"
         endToEndServices={endToEndServices}
+      />
+      <Metrics
+        metricTitle="The team you need is here"
+        metrics={WebMetricData}
+      />
+      <ContactBanner
+        mainText="They deliver great quality."
+        shortText="As said by Overview CTO in a ★ 5 review. Let’s discuss your web development project."
+        contactText="Get in Touch"
+        contactUrl="/contact"
       />
       <FaqSection companyFaqs={webFaqs} />
     </>

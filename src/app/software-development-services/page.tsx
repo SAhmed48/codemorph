@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import FaqSection from "@/components/Faq";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
 import MetricsSection from "@/components/Metrics";
-import softwareDevMetricData from "@/components/Metrics/softwareDevMetrics";
+import { softwareDevMetricData } from "@/components/Metrics/Metrics";
 import CaseStudySection from "@/components/CaseStudies";
 import { softwareDevCaseStudies } from "@/components/CaseStudies/softwareDevCaseStudies";
 import { companyFaqs } from "@/components/Faq/faqs";

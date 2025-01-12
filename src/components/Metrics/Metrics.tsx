@@ -1,6 +1,6 @@
 import { Metric } from "@/types/metric";
 
-const softwareDevMetricData: Metric[] = [
+export const softwareDevMetricData: Metric[] = [
   {
     id: 1,
     successPerc: "60%",
@@ -24,4 +24,26 @@ const softwareDevMetricData: Metric[] = [
   },
 ];
 
-export default softwareDevMetricData;
+export const WebMetricData: Metric[] = [
+  {
+    id: 1,
+    successPerc: "4",
+    text: "",
+    bText: "Architects",
+    customDoorCls: "door-icon-peach",
+  },
+  {
+    id: 2,
+    successPerc: "36+",
+    text: "",
+    bText: "Developers",
+    customDoorCls: "door-icon-lavender",
+  },
+  {
+    id: 3,
+    successPerc: "15+",
+    text: "",
+    bText: "DevOps",
+    customDoorCls: "door-icon-lightblue",
+  },
+];
