@@ -5,6 +5,7 @@ import MetricsSection from "@/components/Metrics";
 import softwareDevMetricData from "@/components/Metrics/softwareDevMetrics";
 import CaseStudySection from "@/components/CaseStudies";
 import { softwareDevCaseStudies } from "@/components/CaseStudies/softwareDevCaseStudies";
+import { companyFaqs } from "@/components/Faq/faqs";
 
 export const metadata: Metadata = {
   title: "About Page | Free Next.js Template for Startup and SaaS",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const AboutPage = () => {
+const SoftwareDevelopServices = () => {
   return (
     <>
       <section
@@ -81,11 +82,20 @@ const AboutPage = () => {
         metricTitle="Your success metrics become ours"
         metrics={softwareDevMetricData}
       />
-      <CaseStudySection caseStudyTitle="Judged by the results we deliver each sprint" caseStudies={softwareDevCaseStudies} />
-      <ContactBanner />
-      <FaqSection />
+      <CaseStudySection
+        caseStudyTitle="Judged by the results we deliver each sprint"
+        caseStudies={softwareDevCaseStudies}
+      />
+      <ContactBanner
+        mainText="Test a project idea quickly with minimal risk"
+        shortText="Try our App Modernization Sprint™ to build a product
+                    improvement roadmap in just 2 weeks."
+        contactText="Interesting, let's see"
+        contactUrl="/contact"
+      />
+      <FaqSection companyFaqs={companyFaqs} />
     </>
   );
 };
 
-export default AboutPage;
+export default SoftwareDevelopServices;
