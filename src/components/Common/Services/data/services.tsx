@@ -210,3 +210,101 @@ export const endToEndMobileServices: EndService[] = [
     ),
   },
 ];
+
+export const endToEndCloudServices: EndService[] = [
+  {
+    serviceName: (
+      <div className="font-normal">
+        <h2 className="text-3xl text-[#8dd4ff]">
+          Cloud re-architecting
+        </h2>
+      </div>
+    ),
+    serviceTech: (
+      <div className="text-white font-light">
+        <span className="my-4 text-lg">
+          Prepare your architecture to offer maximum service availability and product performance for a new wave of users.
+        </span>
+        {[
+          "Build faster using hundreds of production-ready services",
+          "Auto-scale software based on demand",
+          "Use the cloud’s global infrastructure at an affordable price",
+        ].map((item, index) => (
+          <p key={`key-cloud-service-${index}`} className="text-lg my-4">
+            -> {item}
+          </p>
+        ))}
+      </div>
+    ),
+  },
+  {
+    serviceName: (
+      <div className="font-normal">
+        <h2 className="text-3xl text-[#8dd4ff]">Cloud maintenance</h2>
+      </div>
+    ),
+    serviceTech: (
+      <div className="text-white font-light">
+        <span className="my-4 text-lg">
+          Keep your cloud infrastructure stable and operational so your IT can focus on innovation and delivery.
+        </span>
+        {[
+          "Keep cost and resource usage down",
+          "Reduce or eliminate production failures",
+          "Act immediately when downtime strikes",
+        ].map((item, index) => (
+          <p key={`key-cloud-service-${index}`} className="text-lg my-4">
+            -> {item}
+          </p>
+        ))}
+
+      </div>
+    ),
+  },
+  {
+    serviceName: (
+      <div className="font-normal">
+        <h2 className="text-3xl text-[#8dd4ff]">Cloud migration</h2>
+      </div>
+    ),
+    serviceTech: (
+      <div className="text-white font-light">
+       <span className="my-4 text-lg">
+         Migrate from on-prem to the cloud while keeping the product live and the data untouched.
+       </span>
+        {[
+          "Enable rapid development",
+          "Lower operational effort through automation",
+          "Reach beyond on-premise performance limits",
+        ].map((item, index) => (
+          <p key={`key-cloud-service-${index}`} className="text-lg my-4">
+            -> {item}
+          </p>
+        ))}
+      </div>
+    ),
+  },
+  {
+    serviceName: (
+      <div className="font-normal">
+        <h2 className="text-3xl text-[#8dd4ff]">Cloud engineers</h2>
+      </div>
+    ),
+    serviceTech: (
+      <div className="text-white font-light">
+       <span className="my-4 text-lg">
+         Consult your architecture, infrastructure, or service-level cloud challenges with our senior cloud engineers, who’ll help you speed up delivery.
+       </span>
+        {[
+          "Access highly trained cloud engineers in weeks",
+          "Get the strategic advice you need to work with the cloud",
+          "Scale up or downsize your team on demand",
+        ].map((item, index) => (
+          <p key={`key-cloud-service-${index}`} className="text-lg my-4">
+            -> {item}
+          </p>
+        ))}
+      </div>
+    ),
+  },
+];

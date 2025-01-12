@@ -1,93 +1,67 @@
 import ServiceSectionOne from "src/components/Common/Services/SectionOne";
 import ServiceSectionTwo from "@/components/Common/Services/SectionTwo";
-import { TechPoint } from "@/types/technology";
 import ServiceSectionThree from "@/components/Common/Services/SectionThree";
 import ServiceSectionFour from "@/components/Common/Services/SectionFour";
-import { endToEndServices } from "@/components/Common/Services/data/services";
+import { endToEndCloudServices } from "@/components/Common/Services/data/services";
 import FaqSection from "@/components/Faq";
-import { webFaqs } from "@/components/Common/Services/data/faqs";
+import { cloudFaqs } from "@/components/Common/Services/data/faqs";
 import Metrics from "@/components/Metrics";
 import { WebMetricData } from "@/components/Metrics/Metrics";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
+import { CloudTechPoints } from "@/components/Common/Services/data/techPoints";
 const CloudDevelopment = () => {
-  const webTechPoints: TechPoint[] = [
-    {
-      digit: 91,
-      notation: "%",
-      text: "of CTOs say growing technical debt is their main concern",
-      authorText: "(STX Next, 2023)",
-    },
-    {
-      digit: 56,
-      notation: "%",
-      text: "of IT recruiters say finding skilled talent is their no 1 challenge",
-      authorText: "(Statista, 2024)",
-    },
-    {
-      digit: 26,
-      notation: "%",
-      text: "of CTOs admit capacity is their no 2 challenge",
-      authorText: "(STX Next, 2023)",
-    },
-  ];
-
   return (
     <>
       <ServiceSectionOne
-        heading="WEB DEVELOPMENT SERVICES"
-        title="Deliver web solutions with a team CTOs praise"
-        description="Complete the project on time with a web development team that mastered technologies
-      like React, Python, Node.js, TypeScript, and AWS. Kickoff work on your web app in just 2-4 weeks"
+        heading="CLOUD ENGINEERING SERVICES"
+        title="Build reliable and cost-effective cloud solutions"
+        description="Complete your project with a certified AWS Partner that will show you how to master cloud development. Build faster, at a lower cost, and integrate the cloud with your product."
         actionButton
         actionPath="/contact"
       />
       <ServiceSectionTwo
-        headingFirstWord="Keep"
-        headingHighlight="projects moving"
-        headingWords="even when the core team is busy"
-        techPoints={webTechPoints}
+        headingFirstWord="Most companies use"
+        headingHighlight="the cloud"
+        headingWords="but can't seem to master it"
+        techPoints={CloudTechPoints}
       />
       <ServiceSectionThree
         sectionOne={{
-          imageUrl: "/images/services/web-dev.webp",
-          heading: "Stay focused as our self-managed team delivers the project",
+          imageUrl: "/images/services/cloud-dev.webp",
+          heading: "Use the cloud’s full potential in your projects",
           description:
-            "Build a new app, refactor, or rearchitect the product for\n" +
-            "scalability. Your web development team will include\n" +
-            "mid/senior developers, a PM, and backup talent often rated\n" +
-            "5 ★ for quality and speed.",
+            "Your IT can use their cloud as an unfair advantage. Get the guidance needed to power up your product, cloud operations, and to automate DevOps in just 2-4 weeks. ",
         }}
         sectionTwo={{
           sectionNow: {
-            text: "You have a highly skilled team that handles a heavy workload. A new project comes up, requiring the latest technologies and extra talent. Giving your developers new work can create multiple delays and increase technical debt.",
-            text1:
-              "Your company also needs more expertise in specific technologies.",
+            text: "Cloud engineering is complex. It’s hard to choose cloud services right for the job. Some workflows are still server-based because cloud migration or integration is challenging. IT is worried about service reliability or sudden overspending.",
+            text1: "",
           },
           sectionSoon: [
             {
-              text: "You partner with a self-managed web development team that takes full responsibility for the project’s delivery.",
+              text: "You bring in a certified cloud app development team that fixes the weak spots in IT's delivery.",
             },
             {
-              text: "They consult your business requirements to find a best-fit solution and deliver it exactly as promised in the project roadmap.",
+              text: "Building cloud solutions becomes easier as they speed up the project and coach the in-house team.",
             },
             {
-              text: "Your in-house software development team works uninterrupted.",
+              text: "Your cloud infrastructure performs better at a lower cost.",
             },
           ],
         }}
         sectionThree={{
           sectionTop: [
             {
-              title: "Guarantee the project’s delivery",
-              text: "Rely on a web development team experienced in building web apps, Progressive Web Apps, APIs, content management systems, or cloud apps for millions of end users.",
+              title: "Speed up deployment",
+              text: "Automate repetitive processes with ready-made tools and workflows",
             },
             {
-              title: "Find everyone needed",
-              text: "You decide what the setup is for your web development project. Your team can include full-stack developers, designers, PMs, QA engineers, DevOps, or Business Analysts.",
+              title: "Secure service availability",
+              text: "Redesign cloud architecture to auto-balance resource use within the budget",
             },
             {
-              title: "Control the team’s involvement",
-              text: "Upscale or downscale the team and swap members as needed on a monthly basis.",
+              title: "Cut down resource costs and usage",
+              text: "Fix hidden costs generators and see the bill shrink by thousands of dollars",
             },
           ],
           sectionBottom: {
@@ -102,22 +76,22 @@ const CloudDevelopment = () => {
         }}
       />
       <ServiceSectionFour
-        heading="End-to-end web development support"
-        description="Note that one developer can specialize in many technologies"
-        imagePath="/images/services/web-dev.webp"
-        endToEndServices={endToEndServices}
+        heading="Get the guidance your cloud project needs in 2-4 weeks"
+        description=""
+        imagePath="/images/services/cloud-dev.webp"
+        endToEndServices={endToEndCloudServices}
       />
       <Metrics
         metricTitle="The team you need is here"
         metrics={WebMetricData}
       />
       <ContactBanner
-        mainText="They deliver great quality."
-        shortText="As said by Overview CTO in a ★ 5 review. Let’s discuss your web development project."
+        mainText="Can your IT cut that AWS bill?"
+        shortText="Some partners slashed 70-99% of their monthly bills. Review yours in 2 weeks max."
         contactText="Get in Touch"
         contactUrl="/contact"
       />
-      <FaqSection faqs={webFaqs} />
+      <FaqSection faqs={cloudFaqs} />
     </>
   );
 };

@@ -41,3 +41,24 @@ export const MobileTechPoints: TechPoint[] = [
     authorText: "(Our Experiences)",
   },
 ];
+
+export const CloudTechPoints: TechPoint[] = [
+  {
+    digit: 78,
+    notation: "%",
+    text: "of organizations say they lack internal cloud expertise",
+    authorText: "(Flexera, 2023)",
+  },
+  {
+    digit: 37,
+    notation: "%",
+    text: "of businesses constantly overpay for their cloud apps",
+    authorText: "(NetApp, 2024)",
+  },
+  {
+    digit: 8,
+    notation: "%",
+    text: "of technologists have enough cloud development experience",
+    authorText: "(Pluralsight, 2024)",
+  },
+];
