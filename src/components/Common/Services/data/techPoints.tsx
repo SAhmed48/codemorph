@@ -62,3 +62,24 @@ export const CloudTechPoints: TechPoint[] = [
     authorText: "(Pluralsight, 2024)",
   },
 ];
+
+export const dataEngineeringTechPoints: TechPoint[] = [
+  {
+    digit: 0,
+    notation: "",
+    text: "Imagine predicting when sales spike or what content makes users act. What would you like to know?",
+    authorText: "",
+  },
+  {
+    digit: 0,
+    notation: "",
+    text: "One client with several pet marketplaces bumped their revenue by 400% in two years — in part by using big data.",
+    authorText: "",
+  },
+  {
+    digit: 0,
+    notation: "",
+    text: "Our engineering team can show you how to catch and turn data into game-changing insights. You’ll be able to analyze many sources by using the cloud — at an optimized cost.",
+    authorText: "",
+  },
+];

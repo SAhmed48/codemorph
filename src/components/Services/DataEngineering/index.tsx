@@ -1,51 +1,29 @@
 import ServiceSectionOne from "src/components/Common/Services/SectionOne";
 import ServiceSectionTwo from "@/components/Common/Services/SectionTwo";
-import { TechPoint } from "@/types/technology";
 import ServiceSectionThree from "@/components/Common/Services/SectionThree";
 import ServiceSectionFour from "@/components/Common/Services/SectionFour";
-import { endToEndServices } from "@/components/Common/Services/data/services";
+// import { endToEndServices } from "@/components/Common/Services/data/services";
 import FaqSection from "@/components/Faq";
-import { faqs } from "@/components/Common/Services/data/faqs";
+// import { faqs } from "@/components/Common/Services/data/faqs";
 import Metrics from "@/components/Metrics";
 import { WebMetricData } from "@/components/Metrics/Metrics";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
+import { dataEngineeringTechPoints } from "@/components/Common/Services/data/techPoints";
 const DataEngineering = () => {
-  const webTechPoints: TechPoint[] = [
-    {
-      digit: 91,
-      notation: "%",
-      text: "of CTOs say growing technical debt is their main concern",
-      authorText: "(STX Next, 2023)",
-    },
-    {
-      digit: 56,
-      notation: "%",
-      text: "of IT recruiters say finding skilled talent is their no 1 challenge",
-      authorText: "(Statista, 2024)",
-    },
-    {
-      digit: 26,
-      notation: "%",
-      text: "of CTOs admit capacity is their no 2 challenge",
-      authorText: "(STX Next, 2023)",
-    },
-  ];
-
   return (
     <>
       <ServiceSectionOne
-        heading="WEB DEVELOPMENT SERVICES"
-        title="Deliver web solutions with a team CTOs praise"
-        description="Complete the project on time with a web development team that mastered technologies
-      like React, Python, Node.js, TypeScript, and AWS. Kickoff work on your web app in just 2-4 weeks"
+        heading="DATA ENGINEERING SERVICES"
+        title="Dig up strategic insights even from millions of data points"
+        description="Give your stakeholders the facts they need. Set up an AWS system that catches data from your databases, API, Excels, or SaaS tools in real-time. We’ve already helped European banks or e-commerce platforms, delivering 160+ projects to date."
         actionButton
         actionPath="/contact"
       />
       <ServiceSectionTwo
-        headingFirstWord="Keep"
-        headingHighlight="projects moving"
-        headingWords="even when the core team is busy"
-        techPoints={webTechPoints}
+        headingFirstWord="Making "
+        headingHighlight="data-based"
+        headingWords="decisions pays off"
+        techPoints={dataEngineeringTechPoints}
       />
       <ServiceSectionThree
         sectionOne={{
@@ -101,12 +79,12 @@ const DataEngineering = () => {
           },
         }}
       />
-      <ServiceSectionFour
-        heading="End-to-end web development support"
-        description="Note that one developer can specialize in many technologies"
-        imagePath="/images/services/web-dev.webp"
-        endToEndServices={endToEndServices}
-      />
+      {/*<ServiceSectionFour*/}
+      {/*  heading="End-to-end web development support"*/}
+      {/*  description="Note that one developer can specialize in many technologies"*/}
+      {/*  imagePath="/images/services/web-dev.webp"*/}
+      {/*  endToEndServices={endToEndServices}*/}
+      {/*/>*/}
       <Metrics
         metricTitle="The team you need is here"
         metrics={WebMetricData}
@@ -117,7 +95,7 @@ const DataEngineering = () => {
         contactText="Get in Touch"
         contactUrl="/contact"
       />
-      <FaqSection faqs={faqs} />
+      {/*<FaqSection faqs={faqs} />*/}
     </>
   );
 };

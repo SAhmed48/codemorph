@@ -11,3 +11,14 @@ export type ServiceSection = {
   imagePath: string;
   endToEndServices: EndService[];
 };
+
+export type SubService = {
+  name: string;
+  url: string;
+};
+
+export type CompanyService = {
+  name: string;
+  url: string;
+  subServices: SubService[];
+};
