@@ -103,7 +103,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
+                  <ul className="block lg:flex lg:space-x-12 text-white">
                     {menuData.map((menuItem, index) => (
                       <li
                         key={index}
@@ -114,8 +114,8 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                ? "text-white"
+                                : "text-white"
                             }`}
                           >
                             {menuItem.title}
@@ -124,7 +124,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex text-white cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-white dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -148,7 +148,7 @@ const Header = () => {
                                   <Link
                                     href={submenuItem.path}
                                     key={`${index}-abc`}
-                                    className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                    className="block rounded py-2.5 text-sm text-dark hover:text-white dark:text-white/70 dark:hover:text-white lg:px-3"
                                   >
                                     {submenuItem.title}
                                   </Link>
@@ -160,7 +160,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex text-white cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-white dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -189,13 +189,15 @@ const Header = () => {
                                 {Object.entries(menuItem.nestedSubMenu).map(
                                   ([keyItem, keyValue]) => (
                                     <div className="row flex flex-wrap flex-col">
-                                      <p key={index}>{keyItem}</p>
+                                      <p key={index} className="text-black">
+                                        {keyItem}
+                                      </p>
                                       {keyValue.map(
                                         (nestedChild, childIndex) => (
                                           <Link
                                             href={nestedChild.path}
                                             key={nestedChild.id}
-                                            className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                            className="block rounded py-2.5 text-sm text-dark hover:text-black lg:px-3"
                                           >
                                             {nestedChild.title}
                                           </Link>

@@ -35,9 +35,10 @@ const ServiceSectionOne = ({
               </h1>
             </div>
             <header>
-              <h2 className="md:text-4xl lg:text-6xl">
+              <h2 className="md:text-4xl lg:text-5xl mr-4">
                 <span>
                   <span
+                    className="leading-6"
                     style={{
                       color: "#FFFFFF",
                     }}
@@ -51,7 +52,7 @@ const ServiceSectionOne = ({
           <div className="max-w-[550px]">
             <div className="relative z-20 lg:mt-14 lg:max-w-none">
               <p className="font-light text-2xl">
-                <span>
+                <span className="leading-8">
                   <span>{description}</span>
                 </span>
               </p>

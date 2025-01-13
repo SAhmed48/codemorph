@@ -17,31 +17,31 @@ export const companyServices: CompanyService[] = [
   },
   {
     name: "Efficient Development",
-    url: "/services/efficient-development",
+    url: "software-development-services",
     subServices: [
       {
         name: "Web Development",
-        url: "/services/efficient-development/agile",
+        url: "web-development",
       },
       {
         name: "Mobile Development",
-        url: "/services/efficient-development/quality-assurance",
+        url: "mobile-development",
       },
       {
         name: "Cloud Engineering",
-        url: "/services/efficient-development/quality-assurance",
+        url: "cloud-engineering",
       },
       {
         name: "Data Engineering",
-        url: "/services/efficient-development/quality-assurance",
+        url: "data-engineering",
       },
       {
         name: "Modern Frontend",
-        url: "/services/efficient-development/quality-assurance",
+        url: "web-development",
       },
       {
         name: "App Modernization",
-        url: "/services/efficient-development/quality-assurance",
+        url: "web-development",
       },
     ],
   },

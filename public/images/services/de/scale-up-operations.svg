@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 6.75C6.90685 6.75 8.25 5.40685 8.25 3.75C8.25 2.09315 6.90685 0.75 5.25 0.75C3.59315 0.75 2.25 2.09315 2.25 3.75C2.25 5.40685 3.59315 6.75 5.25 6.75Z" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.75 14.25V12.75C9.75 10.2647 7.73528 8.25 5.25 8.25C2.76472 8.25 0.75 10.2647 0.75 12.75V15.75H2.25L3 23.25H7.5L8.175 16.5" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.75 12.75H21.75C22.5784 12.75 23.25 12.0784 23.25 11.25V2.25C23.25 1.42157 22.5784 0.75 21.75 0.75H11.25" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.25 9.75H12.75" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.252 21C14.7017 21 15.877 19.8247 15.877 18.375C15.877 16.9253 14.7017 15.75 13.252 15.75C11.8022 15.75 10.627 16.9253 10.627 18.375C10.627 19.8247 11.8022 21 13.252 21Z" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.5 23.25C15.6889 22.2977 14.5009 21.749 13.25 21.749C11.9991 21.749 10.8111 22.2977 10 23.25" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.002 21C21.4517 21 22.627 19.8247 22.627 18.375C22.627 16.9253 21.4517 15.75 20.002 15.75C18.5522 15.75 17.377 16.9253 17.377 18.375C17.377 19.8247 18.5522 21 20.002 21Z" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.25 23.25C22.4389 22.2977 21.2509 21.749 20 21.749C18.7491 21.749 17.5611 22.2977 16.75 23.25" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.75 9.75V3.75" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.75 9.75V6" stroke="#030EDD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

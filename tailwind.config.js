@@ -85,6 +85,10 @@ module.exports = {
         "metrics-desktop-blob": "url('/images/services/metrics-desktop.svg')",
         "hero-doors-roof": "url('/images/hero/doors-roof.svg')",
         "sky-problem": "url('/images/sky/ProblemSkyBlob.svg')",
+
+        "hero-doors-sharp": "url('/images/hero/doors-sharp.svg')",
+        "hero-lavender-blob": "url('/images/hero/lavender-blob.svg')",
+
         "hero-linear-gradient":
           "linear-gradient(0deg, #f7f9fa, hsla(0, 0%, 100%, 0) 50%), radial-gradient(circle at bottom right, #8dd4ff, #b5b4ff, #b5b4ff, #8dd4ff, #ffebc7, #ffd699);",
         "about-us-video": "url('/images/video/about-us.mp4')",
