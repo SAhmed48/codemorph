@@ -58,7 +58,7 @@ const ServiceSectionOne = ({
             </div>
             {actionButton && (
               <Link
-                section={0}
+                tabIndex={0}
                 className="group text-black inline-block outline-offset-0 transition-all duration-200 max-md:w-full xs:max-w-[320px] py-4 pl-12 pr-10 text-base font-medium swipe-effect bg-sky-300 text-gray-300 before:bg-sky-600 focus-within:outline-[3px] focus:outline focus:outline-[3px] focus:outline-brand-greyscale-900 pointer-events-auto relative z-20 mt-14"
                 href={`${actionPath}`}
               >

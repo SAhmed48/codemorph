@@ -157,7 +157,7 @@ export const endToEndMobileServices: EndService[] = [
           "Maintenance time cut by half",
         ].map((item, index) => (
           <p key={`key-mobile-service-${index}`} className="text-lg my-4">
-            -> {item}
+            <span> &#8594; </span> {item}
           </p>
         ))}
       </div>
@@ -171,8 +171,9 @@ export const endToEndMobileServices: EndService[] = [
     ),
     serviceTech: (
       <div className="text-white font-light">
-                <span className="my-4 text-lg">
-          Unsure of the app’s popularity? You can test your assumption with an Android and iOS MVP designed to support your goal at the lowest cost.
+        <span className="my-4 text-lg">
+          Unsure of the app’s popularity? You can test your assumption with an
+          Android and iOS MVP designed to support your goal at the lowest cost.
         </span>
         {[
           "Introduce app performance monitoring and its management",
@@ -180,14 +181,13 @@ export const endToEndMobileServices: EndService[] = [
           "Streamlined mobile app development process",
         ].map((item, index) => (
           <p key={`key-mobile-service-${index}`} className="text-lg my-4">
-            -> {item}
+            <span> &#8594; </span> {item}
           </p>
         ))}
-
       </div>
     ),
   },
-      {
+  {
     serviceName: (
       <div className="font-normal">
         <h2 className="text-3xl text-[#8dd4ff]">Mobile app modernization</h2>
@@ -195,17 +195,19 @@ export const endToEndMobileServices: EndService[] = [
     ),
     serviceTech: (
       <div className="text-white font-light">
-       <span className="my-4 text-lg">Rebuild your current mobile app in React Native to slash maintenance costs and make the project incomparably easier to code.</span>
+        <span className="my-4 text-lg">
+          Rebuild your current mobile app in React Native to slash maintenance
+          costs and make the project incomparably easier to code.
+        </span>
         {[
           "Improved user engagement",
           "Comparable mobile app performance",
           "Single code base",
         ].map((item, index) => (
           <p key={`key-mobile-service-${index}`} className="text-lg my-4">
-            -> {item}
+            <span> &#8594; </span> {item}
           </p>
         ))}
-
       </div>
     ),
   },
@@ -215,15 +217,14 @@ export const endToEndCloudServices: EndService[] = [
   {
     serviceName: (
       <div className="font-normal">
-        <h2 className="text-3xl text-[#8dd4ff]">
-          Cloud re-architecting
-        </h2>
+        <h2 className="text-3xl text-[#8dd4ff]">Cloud re-architecting</h2>
       </div>
     ),
     serviceTech: (
       <div className="text-white font-light">
         <span className="my-4 text-lg">
-          Prepare your architecture to offer maximum service availability and product performance for a new wave of users.
+          Prepare your architecture to offer maximum service availability and
+          product performance for a new wave of users.
         </span>
         {[
           "Build faster using hundreds of production-ready services",
@@ -231,7 +232,7 @@ export const endToEndCloudServices: EndService[] = [
           "Use the cloud’s global infrastructure at an affordable price",
         ].map((item, index) => (
           <p key={`key-cloud-service-${index}`} className="text-lg my-4">
-            -> {item}
+            <span> &#8594; </span> {item}
           </p>
         ))}
       </div>
@@ -246,7 +247,8 @@ export const endToEndCloudServices: EndService[] = [
     serviceTech: (
       <div className="text-white font-light">
         <span className="my-4 text-lg">
-          Keep your cloud infrastructure stable and operational so your IT can focus on innovation and delivery.
+          Keep your cloud infrastructure stable and operational so your IT can
+          focus on innovation and delivery.
         </span>
         {[
           "Keep cost and resource usage down",
@@ -254,10 +256,9 @@ export const endToEndCloudServices: EndService[] = [
           "Act immediately when downtime strikes",
         ].map((item, index) => (
           <p key={`key-cloud-service-${index}`} className="text-lg my-4">
-            -> {item}
+            <span> &#8594; </span> {item}
           </p>
         ))}
-
       </div>
     ),
   },
@@ -269,16 +270,17 @@ export const endToEndCloudServices: EndService[] = [
     ),
     serviceTech: (
       <div className="text-white font-light">
-       <span className="my-4 text-lg">
-         Migrate from on-prem to the cloud while keeping the product live and the data untouched.
-       </span>
+        <span className="my-4 text-lg">
+          Migrate from on-prem to the cloud while keeping the product live and
+          the data untouched.
+        </span>
         {[
           "Enable rapid development",
           "Lower operational effort through automation",
           "Reach beyond on-premise performance limits",
         ].map((item, index) => (
           <p key={`key-cloud-service-${index}`} className="text-lg my-4">
-            -> {item}
+            <span> &#8594; </span> {item}
           </p>
         ))}
       </div>
@@ -292,16 +294,18 @@ export const endToEndCloudServices: EndService[] = [
     ),
     serviceTech: (
       <div className="text-white font-light">
-       <span className="my-4 text-lg">
-         Consult your architecture, infrastructure, or service-level cloud challenges with our senior cloud engineers, who’ll help you speed up delivery.
-       </span>
+        <span className="my-4 text-lg">
+          Consult your architecture, infrastructure, or service-level cloud
+          challenges with our senior cloud engineers, who’ll help you speed up
+          delivery.
+        </span>
         {[
           "Access highly trained cloud engineers in weeks",
           "Get the strategic advice you need to work with the cloud",
           "Scale up or downsize your team on demand",
         ].map((item, index) => (
           <p key={`key-cloud-service-${index}`} className="text-lg my-4">
-            -> {item}
+            <span> &#8594; </span> {item}
           </p>
         ))}
       </div>

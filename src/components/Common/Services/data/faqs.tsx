@@ -152,26 +152,29 @@ export const cloudFaqs = [
           per year.
         </p>
         <p className="my-8 text-lg font-light">
-          As an AWS Advanced Partner, we have around 20 cloud engineers who earned multiple certifications, which include:
+          As an AWS Advanced Partner, we have around 20 cloud engineers who
+          earned multiple certifications, which include:
         </p>
         <p className="my-8 text-lg font-light">
-         {[
-             "AWS Solutions Architect Professional",
-             "AWS Cloud Practitioner",
-             "AWS Developer Associate",
-             "AWS Security Specialty",
-             "AWS SysOps Administrator",
-             "AWS DevOps Engineer Professional",
-             "AWS Database Specialty",
-             "AWS Machine Learning Specialty",
-         ].map((item, index) => (
-          <p key={`cloud-faq-service-${index}`} className="text-lg my-4">
-            -> {item}
-          </p>
-        ))}
+          {[
+            "AWS Solutions Architect Professional",
+            "AWS Cloud Practitioner",
+            "AWS Developer Associate",
+            "AWS Security Specialty",
+            "AWS SysOps Administrator",
+            "AWS DevOps Engineer Professional",
+            "AWS Database Specialty",
+            "AWS Machine Learning Specialty",
+          ].map((item, index) => (
+            <p key={`cloud-faq-service-${index}`} className="text-lg my-4">
+              <span> &#8594; </span> {item}
+            </p>
+          ))}
         </p>
-          <p className="my-8 text-lg font-light">
-          Our cloud experts can help you build cloud-native architecture and applications with AWS or create a hybrid cloud environment if IT still has to migrate data and workloads completely.
+        <p className="my-8 text-lg font-light">
+          Our cloud experts can help you build cloud-native architecture and
+          applications with AWS or create a hybrid cloud environment if IT still
+          has to migrate data and workloads completely.
         </p>
       </div>
     ),
@@ -182,23 +185,28 @@ export const cloudFaqs = [
     answer: (
       <div className="my-8 text-white font-light">
         <p className="my-8 text-lg font-light">
-          Yes. One of our recent projects involved creating a cloud-native tool for automated article translation using AI.
+          Yes. One of our recent projects involved creating a cloud-native tool
+          for automated article translation using AI.
         </p>
         <p className="my-8 text-lg font-light">
-          A team of 1 Node.js developer and a Software Architect tested several language models to choose the best match for price and quality.
+          A team of 1 Node.js developer and a Software Architect tested several
+          language models to choose the best match for price and quality.
         </p>
 
-          <p className="my-8 text-lg font-light">
-          Then, they built a lambda-based workflow that saved the client 99% of the translation costs for each article processed.
-          </p>
+        <p className="my-8 text-lg font-light">
+          Then, they built a lambda-based workflow that saved the client 99% of
+          the translation costs for each article processed.
+        </p>
 
-          <p className="my-8 text-lg font-light">
-          Discover the full story from the experts who completed the project here.
-          </p>
+        <p className="my-8 text-lg font-light">
+          Discover the full story from the experts who completed the project
+          here.
+        </p>
 
-          <p className="my-8 text-lg font-light">
-          If you’d like to learn how your company can adopt AI for products or DevOps, consider a two-week low-risk sprint led by our AI team.
-          </p>
+        <p className="my-8 text-lg font-light">
+          If you’d like to learn how your company can adopt AI for products or
+          DevOps, consider a two-week low-risk sprint led by our AI team.
+        </p>
       </div>
     ),
   },
@@ -207,29 +215,38 @@ export const cloudFaqs = [
     answer: (
       <div className="my-8 text-white font-light">
         <p className="my-8 text-lg font-light">
-          Of course. A strategy project would include a team interview, architecture, cloud computing, product audits, and a business consultation with the board.
-        </p>
-          <p className="my-8 text-lg font-light"> Depending on your needs and how much work was done, the final strategy can include:</p>
-         <p className="my-8 text-lg font-light">
-         {[
-             "Recommended cloud technology and services to adopt",
-             "Recommended DevOps practices that speed up delivery",
-             "Cloud governance practices with roles and responsibilities",
-             "Cloud data management policy",
-             "Cloud optimization practices",
-             "Rules for secure applications",
-             "A defined observability process",
-         ].map((item, index) => (
-          <p key={`cloud-faq-service-${index}`} className="text-lg my-4">
-            -> {item}
-          </p>
-        ))}
+          Of course. A strategy project would include a team interview,
+          architecture, cloud computing, product audits, and a business
+          consultation with the board.
         </p>
         <p className="my-8 text-lg font-light">
-          Beyond that, you can expect guidance for any stage of cloud maturity your company is at.
+          {" "}
+          Depending on your needs and how much work was done, the final strategy
+          can include:
         </p>
         <p className="my-8 text-lg font-light">
-              We led on-prem-to-cloud migration projects, introduced full observability where it wasn’t an active process, and built multi-website data lakes to enable sharper decision-making.
+          {[
+            "Recommended cloud technology and services to adopt",
+            "Recommended DevOps practices that speed up delivery",
+            "Cloud governance practices with roles and responsibilities",
+            "Cloud data management policy",
+            "Cloud optimization practices",
+            "Rules for secure applications",
+            "A defined observability process",
+          ].map((item, index) => (
+            <p key={`cloud-faq-service-${index}`} className="text-lg my-4">
+              <span> &#8594; </span> {item}
+            </p>
+          ))}
+        </p>
+        <p className="my-8 text-lg font-light">
+          Beyond that, you can expect guidance for any stage of cloud maturity
+          your company is at.
+        </p>
+        <p className="my-8 text-lg font-light">
+          We led on-prem-to-cloud migration projects, introduced full
+          observability where it wasn’t an active process, and built
+          multi-website data lakes to enable sharper decision-making.
         </p>
       </div>
     ),
