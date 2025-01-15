@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import menuData from "./menuData";
 import NavMenu from "./NavMenu";
 
+const showBgColorPaths = ["/contact"];
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -37,14 +37,15 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
+  const isShowBgColor = showBgColorPaths.includes(usePathName);
 
   return (
     <>
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute bg-transparent"
+            ? `dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white text-black !bg-opacity-80 shadow-sticky backdrop-blur-sm transition`
+            : `absolute bg-transparent ${isShowBgColor ? "text-black" : "text-white"}`
         }`}
       >
         <div className="container">
@@ -61,6 +62,7 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
+                  priority
                   className="w-full dark:hidden"
                 />
                 <Image
@@ -68,6 +70,7 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
+                  priority
                   className="hidden w-full dark:block"
                 />
               </Link>

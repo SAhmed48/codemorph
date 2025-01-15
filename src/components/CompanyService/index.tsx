@@ -1,4 +1,5 @@
 import { companyServices } from "@/utils/services";
+import Link from "next/link";
 
 const CompanyService = () => {
   return (
@@ -6,9 +7,11 @@ const CompanyService = () => {
       <hr className="w-full border-0 mb-6 h-0.5 bg-[radial-gradient(circle_at_top_left,#ffc269,#8dd4ff,#b4b4ff,#8dd4ff)]" />
       {companyServices.map((service) => (
         <div key={service.name} className="w-full md:w-1/3 p-4">
-          <h2 className="text-lg font-bold text-[#f7f9fa] mb-3">
-            {service.name}
-          </h2>
+          <Link href={service.url} className="hover:underline">
+            <h2 className="text-lg font-bold text-[#f7f9fa] mb-3">
+              {service.name}
+            </h2>
+          </Link>
           <ul className="text-[#f7f9fa]">
             {service.subServices.map((subService) => (
               <li

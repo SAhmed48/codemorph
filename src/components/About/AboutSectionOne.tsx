@@ -2,7 +2,7 @@ const AboutSectionOne = () => {
   return (
     <section
       id="about-us-page-section-one"
-      className="relative top-[90px] h-[700px] w-full flex-col justify-end overflow-hidden
+      className="relative h-[600px] lg:h-[800px] w-full flex-col justify-end overflow-hidden
         overflow-hidden bg-white dark:bg-gray-dark bg-hero-linear-gradient"
     >
       <video

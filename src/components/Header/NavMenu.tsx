@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const NavMenu = () => {
   return (
-    <ul className="flex items-center justify-center font-semibold lg:flex lg:space-x-14 text-white">
+    <ul className="flex items-center justify-center font-semibold lg:flex lg:space-x-14">
       {menuData.map((menuItem, index) => (
         <li
           key={`nav-item-${index}`}

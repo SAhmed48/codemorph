@@ -16,6 +16,7 @@ const Footer = () => {
                   className="w-full dark:hidden"
                   width={140}
                   height={30}
+                  priority
                 />
                 <Image
                   src="/images/logo/logo.svg"
@@ -23,6 +24,7 @@ const Footer = () => {
                   className="hidden w-full dark:block"
                   width={140}
                   height={30}
+                  priority
                 />
               </Link>
               <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark"></p>
