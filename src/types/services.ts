@@ -22,3 +22,9 @@ export type CompanyService = {
   url: string;
   subServices: SubService[];
 };
+
+export type CompanyTechnologies = {
+  name: string;
+  url: string;
+  technologies: SubService[];
+};

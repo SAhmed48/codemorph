@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Our Software Development Services"
-            paragraph="At eLuminous, we aim to revolutionize businesses by helping them achieve splendid digital transformation.
+            paragraph="At TechOniq, we aim to revolutionize businesses by helping them achieve splendid digital transformation.
             Take a look at our professional services that can augment your company’s output profoundly."
             center
             width="1000px"

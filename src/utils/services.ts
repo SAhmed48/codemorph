@@ -1,4 +1,4 @@
-import { CompanyService } from "@/types/services";
+import { CompanyService, CompanyTechnologies } from "@/types/services";
 
 export const companyServices: CompanyService[] = [
   {
@@ -60,6 +60,79 @@ export const companyServices: CompanyService[] = [
       {
         name: "React Performance",
         url: "/services/acceleration-sprints/feedback-loops",
+      },
+    ],
+  },
+];
+
+export const companyTechnologies: CompanyTechnologies[] = [
+  {
+    name: "Web Development",
+    url: "/web-development",
+    technologies: [
+      {
+        name: "React",
+        url: "/react",
+      },
+      {
+        name: "NextJS",
+        url: "/nextjs",
+      },
+      {
+        name: "Python",
+        url: "/python",
+      },
+      {
+        name: "NodeJS",
+        url: "/python",
+      },
+      {
+        name: "JavaScript",
+        url: "/typescript",
+      },
+      {
+        name: "TypeScript",
+        url: "/typescript",
+      },
+    ],
+  },
+  {
+    name: "Cloud & DevOps",
+    url: "/cloud-engineering",
+    technologies: [
+      {
+        name: "React",
+        url: "/react",
+      },
+      {
+        name: "AWS",
+        url: "/aws",
+      },
+      {
+        name: "Serverless",
+        url: "/serverless",
+      },
+      {
+        name: "Microservices",
+        url: "/microservices",
+      },
+    ],
+  },
+  {
+    name: "Mobile Development",
+    url: "/mobile-development",
+    technologies: [
+      {
+        name: "React Native",
+        url: "/react-native",
+      },
+      {
+        name: "Ionic",
+        url: "/ionic",
+      },
+      {
+        name: "Android",
+        url: "/android",
       },
     ],
   },

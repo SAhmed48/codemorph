@@ -151,13 +151,13 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 57,
-        title: "About Page",
+        title: "About Us",
         path: "/about",
         newTab: false,
       },
       {
         id: 58,
-        title: "Contact Page",
+        title: "Contact Us",
         path: "/contact",
         newTab: false,
       },
