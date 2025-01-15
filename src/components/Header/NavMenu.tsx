@@ -4,7 +4,7 @@ import SubMenu from "@/components/Header/subMenu";
 import menuData from "@/components/Header/menuData";
 import Link from "next/link";
 
-const NavMenu = ({ submenu }) => {
+const NavMenu = () => {
   return (
     <ul className="flex items-center justify-center font-semibold lg:flex lg:space-x-14 text-white">
       {menuData.map((menuItem, index) => (
