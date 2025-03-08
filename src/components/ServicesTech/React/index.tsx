@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-
 import HeroSection from "@/components/Common/TechnologySection/HeaderSection";
 import Entity from "@/components/Common/TechnologySection/Entity";
 import FeatureGrid from "@/components/Common/TechnologySection/Features";
@@ -10,6 +9,8 @@ import CTOs from "@/components/Common/TechnologySection/CTO";
 import Modern from "@/components/Common/TechnologySection/ModernTect";
 import CallToAction from "@/components/Common/TechnologySection/Developers";
 import BlogSection from "@/components/Common/TechnologySection/Blogs";
+import BackendTechnologies from "@/components/Common/TechnologySection/BackendLang";
+import TeamSection from "@/components/Common/TechnologySection/BuildTech";
 
 const descriptions = {
   "Interactive web applications": `When companies want to create web applications that offer lots of interactions to the end-user, React js development services and the environment they provide is often their first choice.\n\nThis frontend framework solves many challenges related to developing efficient web apps of this kind. It does so by introducing the virtual DOM, which updates the real DOM in a smart and efficient way. Thanks to this, even complex web applications can offer great interactivity without sacrificing performance.`,
@@ -41,6 +42,10 @@ const ReactServices = () => {
         title="Where and when do React js development services excel?"
         descriptions={descriptions}
       />
+
+      {/* Build Tech */}
+
+      <TeamSection />
       {/* Testimonials */}
       <TestimonialSection
         title="The Software House is one of the most-highly recommended web development companies in the world"
@@ -87,28 +92,10 @@ const ReactServices = () => {
         buttonText="Explore backend services"
         onButtonClick={() => console.log("Explore backend services")}
       />
-      <section className="py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-10">
-          Do you also need backend development?
-        </h2>
-        <div className="flex flex-col md:flex-row justify-center gap-6">
-          {[
-            { name: "Node.js", icon: "/nodejs.svg" },
-            { name: "Symfony", icon: "/symfony.svg" },
-            { name: "Laravel", icon: "/laravel.svg" },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="border rounded-lg p-4 flex items-center justify-between w-96 shadow-sm hover:shadow-md transition-all"
-            >
-              <span className="text-lg font-semibold text-gray-900">
-                {item.name}
-              </span>
-              {/* <Image src={item.icon} alt={item.name} width={30} height={30} /> */}
-            </div>
-          ))}
-        </div>
-      </section>
+
+      {/* Backend Development */}
+
+      <BackendTechnologies title="Do you also need backend development?" />
     </div>
   );
 };

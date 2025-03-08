@@ -18,13 +18,13 @@ const Entity: React.FC<FeatureSectionProps> = ({
   return (
     <div className="relative text-gray-900 font-['Inter'] p-5 md:p-16 flex flex-col md:flex-row items-center md:items-start gap-36 max-w-7xl mx-auto rounded-2xl overflow-visible">
       {/* Left Image Section */}
-      <div className="relative w-[670px] h-[600px] md:h-[540px] rounded-xl overflow-hidden bottom-28">
+      <div className="relative w-[670px] h-[600px] md:h-[540px] rounded-3xl overflow-hidden bottom-28 border-[9px] border-white">
         <Image
           src={imageSrc}
           alt="Feature Image"
           layout="fill"
           objectFit="cover"
-          className="rounded-3xl border-4 border-black border-opacity-50"
+          className="rounded-2xl"
           quality={100}
         />
       </div>
