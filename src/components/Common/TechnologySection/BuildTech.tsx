@@ -1,62 +1,62 @@
 import Image from "next/image";
+import { Development } from "@/types/development";
 
-const TeamSection = () => {
+interface TeamSectionProps {
+  team: Development[];
+}
+
+const TeamSection: React.FC<TeamSectionProps> = ({ team }) => {
   return (
-    <section className="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+    <section className="container mx-auto px-24 py-16 flex flex-col md:flex-row gap-16">
       {/* Left Side - Image */}
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 h-1/2 flex justify-center">
         <Image
-          src="/team.jpeg" // Make sure to put your image in the public folder or use a URL
+          src="/team.jpeg"
           alt="Team Collaboration"
-          width={520} // Adjust based on your design
-          height={500}
-          className=""
+          width={520}
+          height={520}
         />
       </div>
 
       {/* Right Side - Content */}
-      <div className="w-full md:w-1/2">
-        <h2 className="text-3xl md:text-4xl font-normal text-gray-900 leading-tight">
-          How we build React.js <br /> development team for you
-        </h2>
+      <div className="w-full md:w-1/2 flex flex-col items-start gap-16">
+        {team.map((item, index) => (
+          <div key={index} className="flex flex-col space-y-6">
+            {/* Title with min height to prevent shifting */}
+            <h2 className="text-4xl font-normal text-black leading-snug max-w-96">
+              {item.title}
+            </h2>
 
-        <p className="text-black text-lg leading-relaxed p-4 rounded-lg w-9/12">
-          You’re guaranteed to work with top developers only. First of all, we
-          set high recruitment standards – only 5% of applicants are offered a
-          job. Secondly – we take care of developers’ personal growth and
-          motivation. Finally, our priority is to be effective and
-          well-coordinated.
-        </p>
+            {/* Description */}
 
-        {/* Bullet Points */}
-        <div className="mt-8 space-y-6">
-          {[
-            {
-              title: "Lead developers",
-              description:
-                "Your team will get one. They are the most experienced developers who take care of the right software development strategy and help the team with following it.",
-            },
-            {
-              title: "Interdisciplinary skills",
-              description:
-                "You can easily fill the gap between frontend and backend, and take advantage of our cloud experience.",
-            },
-            {
-              title: "Delivery mindset",
-              description:
-                "We work on business-oriented goals, so you start generating value from technology fast.",
-            },
-          ].map((item, index) => (
-            <div key={index} className="flex items-start gap-4">
-              {/* Checkmark Icon */}
-              <span className="text-blue-500 text-xl">✔️</span>
-              <p className="text-gray-800 text-lg font-medium">
-                <span className="font-bold">{item.title}</span> –{" "}
-                {item.description}
-              </p>
+            {item.description.map((subitem, index) =>
+              subitem.length > 1 ? (
+                <p className="text-black text-lg leading-relaxed font-normal max-w-xl">
+                  {subitem}
+                </p>
+              ) : (
+                <p className="text-black text-lg leading-relaxed font-normal max-w-xl">
+                  {subitem[0]}
+                </p>
+              )
+            )}
+            {/* Bullet Points */}
+            <div className="mt-6 space-y-10 max-w-xl">
+              {item.subDescription.map((subItem, index) => (
+                <div key={index} className="flex gap-8">
+                  <div className="flex items-center justify-center w-10 h-10 border-[1px] border-blue-900 rounded-full">
+                    <span className="text-blue-500 text-lg">✔️</span>
+                  </div>
+                  <div className="flex-1 flex-col">
+                    <p className="text-gray-800 text-lg font-normal">
+                      {subItem}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

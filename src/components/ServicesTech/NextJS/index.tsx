@@ -1,104 +1,112 @@
-import ServiceSectionOne from "src/components/Common/Services/SectionOne";
-import ServiceSectionTwo from "@/components/Common/Services/SectionTwo";
-import ServiceSectionThree from "@/components/Common/Services/SectionThree";
-import ServiceSectionFour from "@/components/Common/Services/SectionFour";
-import { endToEndWebServices } from "@/components/Common/Services/data/services";
-import FaqSection from "@/components/Faq";
-import { webFaqs } from "@/components/Common/Services/data/faqs";
-import Metrics from "@/components/Metrics";
-import { WebMetricData } from "@/components/Metrics/Metrics";
-import ContactBanner from "@/components/ContactBanner/ContactBanner";
-import { webTechPoints } from "@/components/Common/Services/data/techPoints";
+"use client";
+import React from "react";
+import HeroSection from "@/components/Common/TechnologySection/HeaderSection";
+import Entity from "@/components/Common/TechnologySection/Entity";
+import FeatureGrid from "@/components/Common/TechnologySection/Features";
+import ServicesSection from "@/components/Common/TechnologySection/TechService";
+import TestimonialSection from "@/components/Common/TechnologySection/Testimonials";
+import CTOs from "@/components/Common/TechnologySection/CTO";
+import Modern from "@/components/Common/TechnologySection/ModernTect";
+import CallToAction from "@/components/Common/TechnologySection/Developers";
+import BlogSection from "@/components/Common/TechnologySection/Blogs";
+import BackendTechnologies from "@/components/Common/TechnologySection/BackendLang";
+import TeamSection from "@/components/Common/TechnologySection/BuildTech";
+import { NextJsFeature } from "@/components/Common/Services/data/techFeature";
+import { NextTeam } from "@/components/Common/Services/data/developTeam";
+import { NextJsCTO } from "@/components/Common/Services/data/ctoBuild";
+
+const descriptions = {
+  "Interactive web applications": `When companies want to create web applications that offer lots of interactions to the end-user, React js development services and the environment they provide is often their first choice.\n\nThis frontend framework solves many challenges related to developing efficient web apps of this kind. It does so by introducing the virtual DOM, which updates the real DOM in a smart and efficient way. Thanks to this, even complex web applications can offer great interactivity without sacrificing performance.`,
+};
 
 const NextJS = () => {
   return (
-    <>
-      <ServiceSectionOne
-        heading="NEXT JS DEVELOPMENT SERVICES"
-        title="Deliver web solutions with a team CTOs praise"
-        description="Complete the project on time with a web development team that mastered technologies
-      like React, Python, Node.js, TypeScript, and AWS. Kickoff work on your web app in just 2-4 weeks"
-        actionButton
-        actionPath="/contact"
+    <div className="bg-white text-gray-900 font-['Inter']">
+      {/* Header */}
+      <HeroSection
+        description="Next.js is a framework that extends the capabilities of our favorite technologies – Node.js and React. You can use it alongside other tools, such as Express or GraphQL, to make your apps even more powerful and user-friendly."
+        primaryButtonText="Describe the Project"
       />
-      <ServiceSectionTwo
-        headingFirstWord="Keep"
-        headingHighlight="projects moving"
-        headingWords="even when the core team is busy"
-        techPoints={webTechPoints}
+
+      {/* Entity */}
+      <Entity
+        subtitle="Next.js development means:"
+        title="Improved UX."
+        title1="Enhanced SEO."
+        title2="Peek performance."
+        title3=""
+        description="Next.js's primary feature is server-side rendering – the ability to render the JavaScript code entirely on the server and provide the user and bots with easy-to-read HTML. SSR and other Next.js features provide tons of benefits for your project. What kind of benefits exactly?"
+        imageSrc="/Next.jpg"
       />
-      <ServiceSectionThree
-        sectionOne={{
-          imageUrl: "/images/services/web-dev.webp",
-          heading: "Stay focused as our self-managed team delivers the project",
-          description:
-            "Build a new app, refactor, or rearchitect the product for\n" +
-            "scalability. Your web development team will include\n" +
-            "mid/senior developers, a PM, and backup talent often rated\n" +
-            "5 ★ for quality and speed.",
-        }}
-        sectionTwo={{
-          sectionNow: {
-            text: "You have a highly skilled team that handles a heavy workload. A new project comes up, requiring the latest technologies and extra talent. Giving your developers new work can create multiple delays and increase technical debt.",
-            text1:
-              "Your company also needs more expertise in specific technologies.",
-          },
-          sectionSoon: [
-            {
-              text: "You partner with a self-managed web development team that takes full responsibility for the project’s delivery.",
-            },
-            {
-              text: "They consult your business requirements to find a best-fit solution and deliver it exactly as promised in the project roadmap.",
-            },
-            {
-              text: "Your in-house software development team works uninterrupted.",
-            },
-          ],
-        }}
-        sectionThree={{
-          sectionTop: [
-            {
-              title: "Guarantee the project’s delivery",
-              text: "Rely on a web development team experienced in building web apps, Progressive Web Apps, APIs, content management systems, or cloud apps for millions of end users.",
-            },
-            {
-              title: "Find everyone needed",
-              text: "You decide what the setup is for your web development project. Your team can include full-stack developers, designers, PMs, QA engineers, DevOps, or Business Analysts.",
-            },
-            {
-              title: "Control the team’s involvement",
-              text: "Upscale or downscale the team and swap members as needed on a monthly basis.",
-            },
-          ],
-          sectionBottom: {
-            title: "Improve these metrics",
-            points: [
-              "Time to market",
-              "Deployment frequency",
-              "Deployment velocity",
-              "Conversion rate",
-            ],
-          },
-        }}
+
+      {/* Features */}
+      <FeatureGrid features={NextJsFeature} />
+
+      {/* Services */}
+
+      <ServicesSection
+        title="What can you use Next.js development services for?"
+        descriptions={descriptions}
       />
-      <ServiceSectionFour
-        heading="End-to-end web development support"
-        description="Note that one developer can specialize in many technologies"
-        imagePath="/images/services/web-dev.webp"
-        endToEndServices={endToEndWebServices}
+
+      {/* Build Tech */}
+
+      <TeamSection team={NextTeam} />
+      {/* Testimonials */}
+      <TestimonialSection
+        title="The Software House is one of the most-highly recommended web development companies in the world"
+        subtitle="According to Clutch.co research"
+        rating={4.9}
+        totalReviews={120}
       />
-      <Metrics
-        metricTitle="The team you need is here"
-        metrics={WebMetricData}
+
+      {/* CTO */}
+
+      <CTOs
+        title="Why should Tech Managers choose Next.js development services from The Software House?
+"
+        CTO={NextJsCTO}
       />
-      <ContactBanner
-        mainText="They deliver great quality."
-        shortText="As said by Overview CTO in a ★ 5 review. Let’s discuss your web development project."
-        contactText="Get in Touch"
-        contactUrl="/contact"
+
+      {/* Modern Tech */}
+
+      <Modern
+        title="Modern frontend for any backend"
+        highlight=""
+        description="Thanks to the  we're API-first approach able to work efficiently with your backend developers, no matter what your core technology is - Node.js, Java, .Net, Python, Ruby or others."
+        additionalText="It means you can build a modern frontend without any changes in the core of your app."
+        image="/modern.PNG"
       />
-      <FaqSection faqs={webFaqs} />
-    </>
+
+      {/* Client Testimonials */}
+
+      <CallToAction
+        title="Work with leading React.js developers"
+        description="Hire a dedicated team or let us build your product from scratch"
+        buttonText="Book Free Consultation"
+        onButtonClick={() => console.log("Book Free Consultation")}
+      />
+
+      {/* Blogs */}
+
+      <BlogSection
+        title="React.js trends & best practices"
+        subtitle="Engineering blog"
+      />
+
+      {/* Call to Action */}
+
+      <CallToAction
+        title="Do you also need backend development?"
+        description="We can help you with Node.js, Symfony, Laravel and more"
+        buttonText="Explore backend services"
+        onButtonClick={() => console.log("Explore backend services")}
+      />
+
+      {/* Backend Development */}
+
+      <BackendTechnologies title="Do you also need backend development?" />
+    </div>
   );
 };
 

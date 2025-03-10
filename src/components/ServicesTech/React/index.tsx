@@ -11,6 +11,9 @@ import CallToAction from "@/components/Common/TechnologySection/Developers";
 import BlogSection from "@/components/Common/TechnologySection/Blogs";
 import BackendTechnologies from "@/components/Common/TechnologySection/BackendLang";
 import TeamSection from "@/components/Common/TechnologySection/BuildTech";
+import { ReactFeature } from "@/components/Common/Services/data/techFeature";
+import { ReactTeam } from "@/components/Common/Services/data/developTeam";
+import { ReactCTO } from "@/components/Common/Services/data/ctoBuild";
 
 const descriptions = {
   "Interactive web applications": `When companies want to create web applications that offer lots of interactions to the end-user, React js development services and the environment they provide is often their first choice.\n\nThis frontend framework solves many challenges related to developing efficient web apps of this kind. It does so by introducing the virtual DOM, which updates the real DOM in a smart and efficient way. Thanks to this, even complex web applications can offer great interactivity without sacrificing performance.`,
@@ -28,13 +31,16 @@ const ReactServices = () => {
       {/* Entity */}
       <Entity
         subtitle="React software development means:"
-        title="Enterprise solutions. Peak performance. Code quality."
+        title="Enterprise"
+        title1="Solutions"
+        title2="Peek Performance"
+        title3="Code Quality"
         description="Access only experienced React.js developers with a track record in large-scale web development. Quality standards defined by +200 projects."
         imageSrc="/reactabout.jpg"
       />
 
       {/* Features */}
-      <FeatureGrid />
+      <FeatureGrid features={ReactFeature} />
 
       {/* Services */}
 
@@ -45,7 +51,7 @@ const ReactServices = () => {
 
       {/* Build Tech */}
 
-      <TeamSection />
+      <TeamSection team={ReactTeam} />
       {/* Testimonials */}
       <TestimonialSection
         title="The Software House is one of the most-highly recommended web development companies in the world"
@@ -56,7 +62,10 @@ const ReactServices = () => {
 
       {/* CTO */}
 
-      <CTOs title="Why CTOs build their React.js teams with us" />
+      <CTOs
+        title="Why CTOs build their React.js teams with us"
+        CTO={ReactCTO}
+      />
 
       {/* Modern Tech */}
 

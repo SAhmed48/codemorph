@@ -122,13 +122,13 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
           className="p-3 border border-gray-300 rounded-full hover:bg-gray-200 flex items-center justify-center w-10 h-10"
           onClick={prevTestimonial}
         >
-          ◀
+          ▶
         </button>
         <button
           className="p-3 border border-gray-300 rounded-full hover:bg-gray-200 flex items-center justify-center w-10 h-10"
           onClick={nextTestimonial}
         >
-          ▶
+          ◀
         </button>
       </div>
     </div>

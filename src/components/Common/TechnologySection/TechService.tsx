@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface ServicesSectionProps {
   title: string;
@@ -10,7 +12,7 @@ interface ServicesSectionProps {
 
 const services = [
   "Interactive web applications",
-  "Lighting-fast user interfaces",
+  "Lightning-fast user interfaces",
   "Highly-productive frontend teams",
   "Web and mobile apps that share code",
   "Scalable web applications",
@@ -22,7 +24,11 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
   descriptions,
   marginTop = "5rem",
 }) => {
-  // Ensure initial selected service exists in descriptions
+  // Initialize AOS only once
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const defaultService = services.find((s) => descriptions[s]) || services[0];
   const [selectedService, setSelectedService] = useState(defaultService);
 
@@ -30,17 +36,18 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
     <div
       className="bg-white text-gray-900 font-['Inter'] px-6 md:px-20 py-16"
       style={{ marginTop }}
+      data-aos="fade-up"
     >
       {/* Heading */}
-      <h2 className="text-4xl font-medium text-center tracking-wider max-w-7xl mx-auto mb-12">
+      <h2 className="text-[42px] font-light text-center tracking-wider max-w-7xl mx-auto mb-12">
         {title}
       </h2>
 
       {/* Content */}
-      <div className="flex flex-col md:flex-row gap-40 max-w-5xl mx-auto">
-        {/* Sidebar */}
+      <div className="flex flex-col md:flex-row gap-20 max-w-5xl mx-auto">
+        {/* Sidebar (Service Buttons) */}
         <div className="flex flex-col space-y-6 w-full md:w-2/3">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <button
               key={service}
               className={`text-left w-96 px-4 py-3 rounded-xl transition-all duration-200 ${
@@ -54,8 +61,9 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
             </button>
           ))}
         </div>
-        {/* Description */}
-        <div className="w-3/4">
+
+        {/* Description Section (No AOS to prevent re-triggering) */}
+        <div className="w-3/4 transition-opacity duration-500 ease-in-out">
           <h3 className="text-2xl font-bold mb-5">{selectedService}</h3>
           <p className="text-gray-700 leading-relaxed text-lg">
             {descriptions[selectedService] || "More details coming soon..."}
