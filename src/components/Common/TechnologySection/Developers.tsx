@@ -16,7 +16,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
   return (
     <section className="bg-[#f0fafe] py-20 px-6 text-center mt-32">
       <h2 className="text-1xl font-medium text-gray-500">{title}</h2>
-      <p className="mt-4 text-black text-[40px] tracking-wider max-w-3xl mx-auto leading-snug">
+      <p className="mt-4 text-black text-[40px] tracking-wide max-w-3xl mx-auto leading-snug">
         {description}
       </p>
       <div className="mt-10 flex justify-center">

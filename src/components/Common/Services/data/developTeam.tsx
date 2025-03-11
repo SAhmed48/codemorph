@@ -32,3 +32,19 @@ export const NextTeam: Development[] = [
     ],
   },
 ];
+
+export const NodeTeam: Development[] = [
+  {
+    title: "How we build Node.js development team for you",
+    description: [
+      "You’re guaranteed to work with top Node.js developers only.",
+      "First of all, we set high recruitment standards – only 5% of applicants are offered a job. Secondly – we take care of developers’ personal growth and motivation. Finally, our priority is to be effective and well-coordinated.",
+    ],
+    subDescription: [
+      "Lead developers – your team will get one. They are most experienced developers who take care of the right software development process and help the team with following it.",
+      "Interdisciplinary skills – you can easily fill the gap between frontend and backend software development, and take advantage of our cloud experience.",
+      "Delivery mindset – we emphasize business requirements and goals in the development process, so that you can start generating value from technology fast.",
+      "Effective communication – you’ll quickly feel like we worked as your in-house team. Our process is fully transparent and cooperative. And obviously, everyone speaks English very well.",
+    ],
+  },
+];

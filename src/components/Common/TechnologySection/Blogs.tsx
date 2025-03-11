@@ -1,44 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import { BlogSectionProps } from "@/types/blog";
 
-interface BlogPost {
-  id: number;
-  title: string;
-  link: string;
-  image?: string;
-}
-
-interface BlogSectionProps {
-  title: string;
+interface BlogingsProps {
+  blogs: BlogSectionProps[];
   subtitle: string;
+  title: string;
 }
 
-const blogPosts = [
-  {
-    id: 1,
-    title:
-      "Adding cross-platform React/React Native chat to existing application – case study",
-    image: "/react.PNG",
-    link: "/blog/react-native-chat",
-  },
-  {
-    id: 2,
-    title: "React state management: React Hooks vs Redux",
-    image: "/react1.PNG",
-    link: "/blog/react-hooks-redux",
-  },
-  {
-    id: 3,
-    title: "Code splitting with React & Webpack: advanced app optimization",
-    image: "/react3.PNG",
-    link: "/blog/code-splitting",
-  },
-];
-
-const BlogSection: React.FC<BlogSectionProps> = ({
-  title,
-  subtitle,
-}) => {
+const BlogSection: React.FC<BlogingsProps> = ({ blogs, subtitle, title }) => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 mt-12">
       {/* Title */}
@@ -49,11 +19,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({
 
       {/* Blog Cards */}
       <div className="flex flex-wrap justify-center gap-6 mt-20">
-        {blogPosts.map((post) => (
-          <div
-            key={post.id}
-            className="bg-white shadow-lg rounded-xl overflow-hidden h-[500px] w-[350px] flex flex-col"
-          >
+        {blogs.map((post, index) => (
+          <div className="bg-white shadow-lg rounded-xl overflow-hidden h-[500px] w-[350px] flex flex-col">
             <div className="relative w-full h-64 bg-gray-200 flex justify-center items-center">
               {post.image ? (
                 <img
@@ -66,7 +33,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({
               )}
             </div>
             <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 {post.title}
               </h3>
               <div className="mt-auto">

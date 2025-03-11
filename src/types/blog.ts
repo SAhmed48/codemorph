@@ -13,3 +13,9 @@ export type Blog = {
   tags: string[];
   publishDate: string;
 };
+
+export type BlogSectionProps = {
+  image: string;
+  title: string;
+  link: string;
+}

@@ -3,12 +3,20 @@
 import Image from "next/image";
 
 interface HeroSectionProps {
+  title: string;
+  titleBr: string;
+  titleHr: string;
+  titleLast: string;
   description: string;
   primaryButtonText?: string;
   bgImage?: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
+  title,
+  titleBr,
+  titleHr,
+  titleLast,
   description,
   primaryButtonText,
   bgImage,
@@ -19,11 +27,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Left Side: Text Content */}
         <div className="text-left">
           <h1 className="text-5xl font-light tracking-tight text-gray-50 leading-tight">
-            Discover top React
+            {title}
             <br />
-            <span>development</span> <br />
-            services trusted by <br />
-            <span>90% of CTOs</span>
+            <span>{titleBr}</span> <br />
+            {titleHr} <br />
+            <span>{titleLast}</span>
           </h1>
           <div className="mt-6">
             <p
@@ -38,7 +46,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {primaryButtonText && (
             <button className="mt-12 inline-block bg-white text-black text-lg font-semibold px-8 py-2 rounded-3xl shadow-md hover:bg-indigo-600 transition">
               {primaryButtonText}
-            </button>   
+            </button>
           )}
         </div>
         {/* Right Side: Image */}

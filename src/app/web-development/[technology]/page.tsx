@@ -1,7 +1,8 @@
 import NextJS from "@/components/ServicesTech/NextJS";
-import Python from "@/components/ServicesTech/Python";
 import ReactJS from "@/components/ServicesTech/React";
+import Node from "@/components/ServicesTech/NodeJS";
 import React from "react";
+import TypeScript from "@/components/ServicesTech/Typescript";
 
 export default function TechnologyPage({ params }) {
   const { technology } = params;
@@ -10,8 +11,10 @@ export default function TechnologyPage({ params }) {
       return <ReactJS />;
     case "nextjs":
       return <NextJS />;
-    case "python":
-      return <Python />;
+    case "nodejs":
+      return <Node />;
+    case "typescript":
+      return <TypeScript />;
     default:
       break;
   }
@@ -21,6 +24,6 @@ export async function generateStaticParams() {
   return [
     { technology: "react" }, // technology must be a string
     { technology: "nextjs" },
-    { technology: "python" },
+    { technology: "nodejs" },
   ];
 }

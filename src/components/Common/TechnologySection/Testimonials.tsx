@@ -2,15 +2,13 @@
 
 import { useState } from "react";
 
-interface Testimonial {
-  name: string;
-  role: string;
-  company: string;
-  message: string;
-}
+export type textParts = {
+  text: string;
+  highlight?: boolean;
+};
 
 interface TestimonialSectionProps {
-  title: string;
+  textParts: textParts[];
   subtitle: string;
   rating: number;
   totalReviews: number;
@@ -38,6 +36,7 @@ const testimonials = [
 ];
 
 const TestimonialSection: React.FC<TestimonialSectionProps> = ({
+  textParts,
   subtitle,
   rating,
   totalReviews,
@@ -68,14 +67,16 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
       <p className="text-[#626873] font-medium text-lg relative z-10">
         {subtitle}
       </p>
-      <h2 className="text-[35px] tracking-wide font-normal leading-normal mt-2 relative z-10">
-        The Software House is one of the{" "}
-        <span className="bg-blue-100 px-2">most-</span>
-        <br />
-        <span className="bg-blue-100 px-2">highly recommended</span> web
-        development
-        <br />
-        companies in the world
+      <h2 className="text-[35px] tracking-wide font-normal leading-normal mt-2 relative z-10 w-[800px] text-center mx-auto">
+        {textParts.map((part, index) =>
+          part.highlight ? (
+            <span key={index} className="bg-blue-100 px-2">
+              {part.text}
+            </span>
+          ) : (
+            <>{part.text}</>
+          )
+        )}
       </h2>
 
       <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-56 relative z-10">

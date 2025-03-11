@@ -3,15 +3,16 @@ import { Development } from "@/types/development";
 
 interface TeamSectionProps {
   team: Development[];
+  imageUrl: string;
 }
 
-const TeamSection: React.FC<TeamSectionProps> = ({ team }) => {
+const TeamSection: React.FC<TeamSectionProps> = ({ team, imageUrl }) => {
   return (
     <section className="container mx-auto px-24 py-16 flex flex-col md:flex-row gap-16">
       {/* Left Side - Image */}
       <div className="w-full md:w-1/2 h-1/2 flex justify-center">
         <Image
-          src="/team.jpeg"
+          src={imageUrl}
           alt="Team Collaboration"
           width={520}
           height={520}
@@ -44,7 +45,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ team }) => {
             <div className="mt-6 space-y-10 max-w-xl">
               {item.subDescription.map((subItem, index) => (
                 <div key={index} className="flex gap-8">
-                  <div className="flex items-center justify-center w-10 h-10 border-[1px] border-blue-900 rounded-full">
+                  <div className="flex items-center justify-center w-8 h-8 border-[1px] border-blue-900 rounded-full">
                     <span className="text-blue-500 text-lg">✔️</span>
                   </div>
                   <div className="flex-1 flex-col">

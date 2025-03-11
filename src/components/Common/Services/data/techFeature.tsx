@@ -77,3 +77,42 @@ export const NextJsFeature: TechServiceOne[] = [
       "Next.js requires proficiency in Node and React and is primarily and best used by experienced devs. While working with The Software House, you will benefit from the vast experience of Next.js experts.",
   },
 ];
+
+export const NodeFeature: TechServiceOne[] = [
+  {
+    imageUrl: "/module.svg",
+    heading: "Microservice-ready approach",
+    description:
+      "Unblock Node.js development services with mini-teams building multiple components at the same time.",
+  },
+  {
+    imageUrl: "/performance.svg",
+    heading: "Designed to empower",
+    description:
+      "StackOverflow confirms Node.js application server side development increases performance of different platforms by 50% and cuts development costs.",
+  },
+  {
+    imageUrl: "/seo.svg",
+    heading: "1st choice for scalable apps",
+    description:
+      "Stay prepared for growth with technology that works seamlessly with microservices and serverless computing.",
+  },
+  {
+    imageUrl: "/reusable.svg",
+    heading: "Ready for full-stack coding",
+    description:
+      "With Node app development, developers get a productivity boost, as they can cover frontend and backend work.",
+  },
+  {
+    imageUrl: "/high.svg",
+    heading: "Real-time data flow",
+    description:
+      "Avoid update lags by building WebSockets based on Node.js that parses information in an instant, making your data intensive services faster.",
+  },
+  {
+    imageUrl: "/supportive.svg",
+    heading: "Community-made software development solutions",
+    description:
+      "With +310.000 repositories on GitHub, Node services have the benefit of hundreds smart add-ons for faster deployment.",
+  },
+];
