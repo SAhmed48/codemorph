@@ -30,7 +30,7 @@ export default function Home() {
       <TechnologyProficiency />
       {/* <Insights /> */}
       <Video />
-      {/*<AboutSectionOne />*/}
+      {/* <AboutSectionOne /> */}
       {/*<AboutSectionTwo />*/}
       <Testimonials />
       {/* <Pricing /> */}

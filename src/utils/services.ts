@@ -72,27 +72,27 @@ export const companyTechnologies: CompanyTechnologies[] = [
     technologies: [
       {
         name: "React",
-        url: "/react",
+        url: "/web-development/react",
       },
       {
         name: "NextJS",
-        url: "/nextjs",
+        url: "/web-development/nextjs",
       },
       {
         name: "Python",
-        url: "/python",
+        url: "/web-development/python",
       },
       {
         name: "NodeJS",
-        url: "/python",
+        url: "/web-development/nodejs",
       },
       {
         name: "JavaScript",
-        url: "/typescript",
+        url: "/web-development/javascript",
       },
       {
         name: "TypeScript",
-        url: "/typescript",
+        url: "/web-development/typescript",
       },
     ],
   },

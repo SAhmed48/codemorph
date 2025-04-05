@@ -19,7 +19,7 @@ const ServiceSectionTwo = ({
       >
         <div className="absolute inset-0 bg-[length:150%_150%] bg-[position:-20%_100%] bg-no-repeat sm:bg-[length:80%_100%]  sm:bg-[position:100%_100%] md:bg-[length:60%_100%] md:bg-right-bottom lg:bg-auto 2xl:bg-[length:50%_100%] bg-sky-problem"></div>
         <div className="container flex w-full flex-col gap-10 py-10 sm:gap-15 sm:py-20 md:flex-row md:gap-24 md:pb-32 md:pt-30 lg:gap-39">
-          <div className="opacity-0 translate-x-0 translate-y-0 opacity-100">
+          <div className="opacity-0 translate-x-0 translate-y-0">
             <header className="w-full md:max-w-[602px]">
               <h2 className="font-light text-6xl">
                 <span>{headingFirstWord} </span>
@@ -30,7 +30,7 @@ const ServiceSectionTwo = ({
               </h2>
             </header>
           </div>
-          <div className="opacity-0 md:mt-24 lg:mt-34 translate-x-0 translate-y-0 opacity-100">
+          <div className="opacity-0 md:mt-24 lg:mt-34 translate-x-0 translate-y-0">
             <ul className="flex flex-col gap-4 sm:gap-8 md:max-w-[560px] md:gap-15">
               {techPoints.map((item, index) => (
                 <li key={index} className="flex gap-6 sm:gap-8">
