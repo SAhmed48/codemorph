@@ -4,9 +4,9 @@ import Image from "next/image";
 
 interface HeroSectionProps {
   title: string;
-  titleBr: string;
-  titleHr: string;
-  titleLast: string;
+  titleBr?: string;
+  titleHr?: string;
+  titleLast?: string;
   description: string;
   primaryButtonText?: string;
   bgImage?: string;
@@ -14,9 +14,6 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({
   title,
-  titleBr,
-  titleHr,
-  titleLast,
   description,
   primaryButtonText,
   bgImage,

@@ -30,7 +30,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ team, imageUrl }) => {
 
             {/* Description */}
 
-            {item.description.map((subitem, index) =>
+            {item.description.map((subitem, _) =>
               subitem.length > 1 ? (
                 <p className="text-black text-lg leading-relaxed font-normal max-w-xl">
                   {subitem}
