@@ -34,11 +34,11 @@ const ReactServices = () => {
     <div className="bg-white text-gray-900 font-['Inter']">
       {/* Header */}
       <HeroSection
-        title="Discover top React"
-        titleBr="development"
-        titleHr="services trusted by"
-        titleLast="98% of CTOs"
-        description="Build or rescale your project with programming minds rated 4.9 on Clutch. Using React.js, React Native, TypeScript & Next.js."
+        title="Discover top React development services trusted by 98% of CTOs"
+        titleBr=""
+        titleHr=""
+        titleLast=""
+        description="Build or rescale your project with programming minds. Using React.js, React Native, TypeScript & Next.js."
         primaryButtonText="Describe the Project"
       />
 

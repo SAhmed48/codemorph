@@ -28,10 +28,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="text-left">
           <h1 className="text-5xl font-light tracking-tight text-gray-50 leading-tight">
             {title}
-            <br />
-            <span>{titleBr}</span> <br />
-            {titleHr} <br />
-            <span>{titleLast}</span>
           </h1>
           <div className="mt-6">
             <p

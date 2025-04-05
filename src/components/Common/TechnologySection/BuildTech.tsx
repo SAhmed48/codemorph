@@ -3,7 +3,7 @@ import { Development } from "@/types/development";
 
 interface TeamSectionProps {
   team: Development[];
-  imageUrl: string;
+  imageUrl?: string;
 }
 
 const TeamSection: React.FC<TeamSectionProps> = ({ team, imageUrl }) => {
@@ -39,7 +39,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ team, imageUrl }) => {
                 <p className="text-black text-lg leading-relaxed font-normal max-w-xl">
                   {subitem[0]}
                 </p>
-              )
+              ),
             )}
             {/* Bullet Points */}
             <div className="mt-6 space-y-10 max-w-xl">
